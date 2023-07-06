@@ -9,6 +9,11 @@
             @csrf
             @method('PUT')
 
+            <div class="form-group mb-3" style="margin-top: 40px;" >
+                <label for="nome">Usuário cadastrado em:</label>
+                <p>{{ $usuario->created_at->format('d/m/Y') }}</p>
+            </div>
+
             <div class="form-group mb-3">
                 <label for="nome">Nome</label>
                 <input type="text" placeholder="Digite o nome" class="form-control" id="nome" name="nome" value="{{ $usuario->nome }}" required>
