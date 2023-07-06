@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, 'sans-serif';
+}
+
+/* body {
+  background-color: #908d8d !important;
+} */
+
+.container-width {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.novo {
+  margin-top: 100px;
+  display: flex;
+  justify-content: end;
+}
+
+.novo a {
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+
+.icon-margin {
+  margin-right: 5px;
+}
