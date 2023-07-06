@@ -13,3 +13,15 @@ Route::get('/usuarios/create', [UsuariosController::class, 'create'])->name(
 Route::post('/usuarios', [UsuariosController::class, 'store'])->name(
     'usuarios.store'
 );
+
+Route::delete('/usuarios/{id}', [UsuariosController::class, 'destroy'])->name(
+    'usuarios.destroy'
+);
+
+Route::get('/usuarios/{id}/edit', [UsuariosController::class, 'edit'])->name(
+    'usuarios.edit'
+);
+
+Route::put('/usuarios/{id}', [UsuariosController::class, 'update'])->name(
+    'usuarios.update'
+);

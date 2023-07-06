@@ -12,24 +12,28 @@
             <div class="form-group mb-3">
                 <label for="nome">Nome</label>
                 <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome">
+                <div id="nome-error" class="text-danger"></div>
             </div>
 
             <div class="form-group mb-3">
                 <label for="email">E-mail</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Digite o e-mail">
+                <input type="email" class="form-control" id="email" name="email" placeholder="example@email.com">
+                <div id="email-error" class="text-danger"></div>
             </div>
 
             <div class="form-group mb-3">
                 <label for="data_nascimento">Data de Nascimento</label>
                 <input type="text" class="form-control" id="data_nascimento" name="data_nascimento" placeholder="00/00/0000">
+                <div id="data-nascimento-error" class="text-danger"></div>
             </div>
 
             <div class="form-group mb-3">
                 <label for="senha">Senha</label>
-                <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite a senha">
+                <input type="password" class="form-control" id="senha" name="senha" placeholder="********">
+                <div id="senha-error" class="text-danger"></div>
             </div>
 
-            <button type="submit" id="btn-salvar" class="btn btn-success w-100"><i class="fa fa-plus icon-margin" aria-hidden="true"></i>Salvar</button>
+            <button type="submit" id="btn-salvar" class="btn btn-success w-100"><i class="fa fa-check icon-margin" aria-hidden="true"></i>Salvar</button>
 
             <a href="{{ route('usuarios.index') }}" class="btn btn-danger w-100 mt-2"><i class="fa fa-ban icon-margin" aria-hidden="true"></i>Cancelar</a>
         </form>
